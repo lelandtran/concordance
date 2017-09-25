@@ -1,0 +1,55 @@
+# Concordance
+
+### Explanation
+Concordance is a program which will take a String document written in English and output an alphabetical list of the words which form the document along with the number of occurrences of each word and the sentence indexes of each word's appearances.
+
+#### Assumptions
+* Sentences are written in English
+* Sentences begin with capital letters
+* A sentence ends with a period and not any other type of punctuation e.g. colon, semicolon.
+
+### Deficiencies
+The program has a pretty gaping hole when it comes to abbreviated words followed by proper nouns "e.g. Encyclopedia Britannica".
+
+### To Do List
+* Unit tests
+* An option to read the document from a file
+
+### Anything beyond this point is kept because I forgot to remove it from the markdown example before sending. Whoops!
+
+Basic useful feature list:
+
+ * Ctrl+S / Cmd+S to save the file
+ * Ctrl+Shift+S / Cmd+Shift+S to choose to save as Markdown or HTML
+ * Drag and drop a file into here to load it
+ * File contents are saved in the URL so you can share files
+
+
+I'm no good at writing sample / filler text, so go write something yourself.
+
+Look, a list!
+
+ * foo
+ * bar
+ * baz
+
+And here's some code! :+1:
+
+```javascript
+$(function(){
+  $('div').html('I am a div.');
+});
+```
+
+This is [on GitHub](https://github.com/jbt/markdown-editor) so let me know if I've b0rked it somewhere.
+
+
+Props to Mr. Doob and his [code editor](http://mrdoob.com/projects/code-editor/), from which
+the inspiration to this, and some handy implementation hints, came.
+
+### Stuff used to make this:
+
+ * [markdown-it](https://github.com/markdown-it/markdown-it) for Markdown parsing
+ * [CodeMirror](http://codemirror.net/) for the awesome syntax-highlighted editor
+ * [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for syntax highlighting in output code blocks
+ * [js-deflate](https://github.com/dankogai/js-deflate) for gzipping of data to make it fit in URLs
