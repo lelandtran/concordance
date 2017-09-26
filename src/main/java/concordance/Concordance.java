@@ -12,7 +12,6 @@ import java.util.regex.Pattern;
 
 public class Concordance {
 	private static final List<Character> sentenceEnders = Arrays.asList('.', '?', '!');
-	private static final List<String> properNouns = Arrays.asList("Al");
 
 	public static void main(String args[]){
 		if (args.length == 1){
